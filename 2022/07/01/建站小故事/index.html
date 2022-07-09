@@ -16,15 +16,15 @@
   <meta name="author" content="TuoLiYinLi">
   <meta name="keywords" content="脱离引力 个人博客">
   
-    <meta name="description" content="搭建个人网站的一点点经验总结以及对原有教程的补充             建站又是一阵折腾……参考教程 从零搭建Hexo博客并部署阿里云服务器常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。  建设逻辑： 用hexo作为网页框架引擎：用hexo的插件把网页代码部署到远程仓库，">
+    <meta name="description" content="一点点关于搭建个人网站的经验总结以及对原有教程的补充。            建站又是一阵折腾…… 参考教程 从零搭建Hexo博客并部署阿里云服务器 常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。 虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。 1. 建设逻辑： - 用hexo作为网页框架引擎：用hexo的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建站小故事：阿里云、nginx、hexo和git">
-<meta property="og:url" content="http://tuoliyinli.top/2022/07/01/%E5%BB%BA%E7%AB%99%E5%B0%8F%E6%95%85%E4%BA%8B/index.html">
+<meta property="og:url" content="http://tuoliyinli.github.io/2022/07/01/%E5%BB%BA%E7%AB%99%E5%B0%8F%E6%95%85%E4%BA%8B/index.html">
 <meta property="og:site_name" content="脱离引力的博客||Game&amp;Life">
-<meta property="og:description" content="搭建个人网站的一点点经验总结以及对原有教程的补充             建站又是一阵折腾……参考教程 从零搭建Hexo博客并部署阿里云服务器常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。  建设逻辑： 用hexo作为网页框架引擎：用hexo的插件把网页代码部署到远程仓库，">
+<meta property="og:description" content="一点点关于搭建个人网站的经验总结以及对原有教程的补充。            建站又是一阵折腾…… 参考教程 从零搭建Hexo博客并部署阿里云服务器 常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。 虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。 1. 建设逻辑： - 用hexo作为网页框架引擎：用hexo的">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-01T03:16:52.000Z">
-<meta property="article:modified_time" content="2022-07-07T16:51:15.089Z">
+<meta property="article:modified_time" content="2022-07-09T12:28:25.133Z">
 <meta property="article:author" content="TuoLiYinLi">
 <meta property="article:tag" content="云服务器">
 <meta property="article:tag" content="nginx">
@@ -72,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"tuoliyinli.top","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":100,"cursorChar":"■","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"tuoliyinli.github.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":100,"cursorChar":"■","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.2k 字
         
       </span>
     
@@ -277,29 +277,31 @@
               <div class="markdown-body">
                 
                 <div class="note note-primary">
-            <p>搭建个人网站的一点点经验总结以及对原有教程的补充</p>
+            <p>一点点关于搭建个人网站的经验总结以及对原有教程的补充。</p>
           </div>
-
-<p>建站又是一阵折腾……<br>参考教程 <a target="_blank" rel="noopener" href="https://blog.objectspace.cn/2019/08/15/%E4%BB%8E%E9%9B%B6%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%A5%B6%E5%A6%88%E7%BA%A7%E6%95%99%E5%AD%A6/">从零搭建Hexo博客并部署阿里云服务器</a><br>常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。<br>虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。</p>
-<ol>
-<li>建设逻辑：<ul>
-<li>用<code>hexo</code>作为网页框架引擎：用<code>hexo</code>的插件把网页代码部署到远程仓库，同时还可以备份到<code>github</code></li>
-<li>用<code>git</code>作为部署的工具：服务器上创建git账号，用于ssh登录和管理自定义的git仓库</li>
-<li><code>ngnix</code>作为web服务器</li>
-<li>用阿里云服务器，系统我选择的是 CentOS 8.2</li>
-</ul>
-</li>
-<li>即便自定义git仓库可以<code>push</code>，也仅仅只是压缩储存了提交的内容，如果需要把这个自定义git仓库里的源代码提取出来，还需要用到git hook。在自定义的git仓库中应该有自动生成的<code>hooks</code>文件夹，其中的文件会按照文件名在特定的git命令执行时运行。我需要利用它来把本地上传的代码从仓库里部署到<code>ngnix</code>的网站根目录</li>
-<li>git hook用法:<br> 编辑文件<code>blog.git/hooks/post-receive</code> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br>git --work-tree=/home/www/website --git-dir=/home/git/blog.git checkout -f<br></code></pre></td></tr></table></figure>
- 在<code>hooks</code>文件夹里的脚本会按照命名在特定时候触发运行。这里运行bash命令。<code>/home/www/website</code>是nginx的服务器目录。将<code>hexo</code>生成的<code>public</code>文件夹中的文件提交到此<code>blog.git</code>仓库后就会用<code>checkout</code>命令将文件同步到服务器的目录。上传部署就完成了</li>
-<li>ssh 密钥配置方法<br> ssh密钥简单来说就是有两点：<ul>
-<li>服务端必须在ssh服务设置中允许rst验证</li>
-<li>服务端被登录的账号下有<code>.ssh/authorized_keys</code>文件，将客户端的公钥拷贝进去即为安装密钥</li>
-</ul>
-</li>
-<li>git账户（或者你用于远程部署git仓库的账户）必须要有对应的修改权限</li>
-<li>hexo deploy插件配置方法<br>   关键是多个git仓库如何配置，如下，在本地的hexo博客设置文件<code>_config.yml</code>中配置 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br> 	<span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br> 	<span class="hljs-attr">repo:</span><br><span class="hljs-string">&lt;repo</span> <span class="hljs-string">name</span> <span class="hljs-number">1</span><span class="hljs-string">&gt;:</span> <span class="hljs-string">https://github.com/&lt;who&gt;/&lt;repo&gt;,&lt;branch&gt;</span><br><span class="hljs-string">&lt;repo</span> <span class="hljs-string">name</span> <span class="hljs-number">2</span><span class="hljs-string">&gt;:</span> <span class="hljs-string">&lt;user&gt;@&lt;IP&gt;:/&lt;repo&gt;,&lt;branch&gt;</span><br><span class="hljs-attr">github:</span> <span class="hljs-string">https://github.com/TuoLiYinLi/BlogBackup.git,master</span><br><span class="hljs-string">...</span><br></code></pre></td></tr></table></figure></li>
-</ol>
+<p>建站又是一阵折腾…… 参考教程 <a
+target="_blank" rel="noopener" href="https://blog.objectspace.cn/2019/08/15/%E4%BB%8E%E9%9B%B6%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%A5%B6%E5%A6%88%E7%BA%A7%E6%95%99%E5%AD%A6/">从零搭建Hexo博客并部署阿里云服务器</a>
+常常苦口婆心地讲，要授人以渔，而这恰恰说明授人以渔是鲜有人做到。
+虽然是跟随这个教程，但是仍然遇上了不少问题，折腾了很久，最终解决了，以下作为记录。
+1. 建设逻辑： -
+用<code>hexo</code>作为网页框架引擎：用<code>hexo</code>的插件把网页代码部署到远程仓库，同时还可以备份到<code>github</code>
+-
+用<code>git</code>作为部署的工具：服务器上创建git账号，用于ssh登录和管理自定义的git仓库
+- <code>ngnix</code>作为web服务器 - 用阿里云服务器，系统我选择的是
+CentOS 8.2 2.
+即便自定义git仓库可以<code>push</code>，也仅仅只是压缩储存了提交的内容，如果需要把这个自定义git仓库里的源代码提取出来，还需要用到git
+hook。在自定义的git仓库中应该有自动生成的<code>hooks</code>文件夹，其中的文件会按照文件名在特定的git命令执行时运行。我需要利用它来把本地上传的代码从仓库里部署到<code>ngnix</code>的网站根目录
+3. git hook用法: 编辑文件<code>blog.git/hooks/post-receive</code>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br>git --work-tree=/home/www/website --git-dir=/home/git/blog.git checkout -f<br></code></pre></td></tr></table></figure>
+在<code>hooks</code>文件夹里的脚本会按照命名在特定时候触发运行。这里运行bash命令。<code>/home/www/website</code>是nginx的服务器目录。将<code>hexo</code>生成的<code>public</code>文件夹中的文件提交到此<code>blog.git</code>仓库后就会用<code>checkout</code>命令将文件同步到服务器的目录。上传部署就完成了
+4. ssh 密钥配置方法 ssh密钥简单来说就是有两点： -
+服务端必须在ssh服务设置中允许rst验证 -
+服务端被登录的账号下有<code>.ssh/authorized_keys</code>文件，将客户端的公钥拷贝进去即为安装密钥
+5. git账户（或者你用于远程部署git仓库的账户）必须要有对应的修改权限 6.
+hexo deploy插件配置方法
+关键是多个git仓库如何配置，如下，在本地的hexo博客设置文件<code>_config.yml</code>中配置
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br> 	<span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br> 	<span class="hljs-attr">repo:</span><br><span class="hljs-string">&lt;repo</span> <span class="hljs-string">name</span> <span class="hljs-number">1</span><span class="hljs-string">&gt;:</span> <span class="hljs-string">https://github.com/&lt;who&gt;/&lt;repo&gt;,&lt;branch&gt;</span><br><span class="hljs-string">&lt;repo</span> <span class="hljs-string">name</span> <span class="hljs-number">2</span><span class="hljs-string">&gt;:</span> <span class="hljs-string">&lt;user&gt;@&lt;IP&gt;:/&lt;repo&gt;,&lt;branch&gt;</span><br><span class="hljs-attr">github:</span> <span class="hljs-string">https://github.com/TuoLiYinLi/BlogBackup.git,master</span><br><span class="hljs-string">...</span><br></code></pre></td></tr></table></figure> &gt;
+最后的插曲。其实用github.io更简单不少，不仅解决了域名和备案的问题，而且成本是零，于是两周后我还是用回了github🤣</p>
 
                 
               </div>
@@ -362,7 +364,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>建站小故事：阿里云、nginx、hexo和git</div>
-      <div>http://tuoliyinli.top/2022/07/01/建站小故事/</div>
+      <div>http://tuoliyinli.github.io/2022/07/01/建站小故事/</div>
     </div>
     <div class="license-meta">
       
