@@ -16,22 +16,23 @@
   <meta name="author" content="TuoLiYinLi">
   <meta name="keywords" content="脱离引力 个人博客">
   
-    <meta name="description" content="一分钟教会你备份Linux            备份 备份系统（测试系统为Linux Centos 7 X86 64） 1tar cvpzf backup.tgz &#x2F; --exclude&#x3D;&amp;#x27;&#x2F;proc&#x2F;*&amp;#x27; --exclude&#x3D;&amp;#x27;backup.tgz&amp;#x27; --exclude&#x3D;&amp;#x27;&#x2F;mnt&#x2F;*&amp;#x27; --excl">
+    <meta name="description" content="北京MageCosmos面试被骗方案，话说，这是面试游戏策划的日常吧            虽然面试官说你很优秀，但事实上他只是希望让你交出你的方案作为“考试”，然后一脚把你踢飞。 找个正儿八经的游戏策划实习还是很麻烦的，这一年疫情严峻，很多公司都缩减了名额，校招都没几个……从现在年底的情况看来，还好没去这一家，要不然就算实习了也不能转正吧，恐怕老板都被这股经济寒流">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux备份整个系统">
-<meta property="og:url" content="http://tuoliyinli.github.io/2022/12/03/Linux%E5%A4%87%E4%BB%BD%E6%95%B4%E4%B8%AA%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:title" content="MageCosmos策划试题">
+<meta property="og:url" content="http://tuoliyinli.github.io/2022/12/03/%E5%85%B3%E4%BA%8E%E9%9D%A2%E8%AF%95%E5%AE%98%E9%AA%97%E6%88%91%E6%96%B9%E6%A1%88%E8%BF%99%E4%BB%B6%E4%BA%8B/index.html">
 <meta property="og:site_name" content="脱离引力的博客||Game&amp;Life">
-<meta property="og:description" content="一分钟教会你备份Linux            备份 备份系统（测试系统为Linux Centos 7 X86 64） 1tar cvpzf backup.tgz &#x2F; --exclude&#x3D;&amp;#x27;&#x2F;proc&#x2F;*&amp;#x27; --exclude&#x3D;&amp;#x27;backup.tgz&amp;#x27; --exclude&#x3D;&amp;#x27;&#x2F;mnt&#x2F;*&amp;#x27; --excl">
+<meta property="og:description" content="北京MageCosmos面试被骗方案，话说，这是面试游戏策划的日常吧            虽然面试官说你很优秀，但事实上他只是希望让你交出你的方案作为“考试”，然后一脚把你踢飞。 找个正儿八经的游戏策划实习还是很麻烦的，这一年疫情严峻，很多公司都缩减了名额，校招都没几个……从现在年底的情况看来，还好没去这一家，要不然就算实习了也不能转正吧，恐怕老板都被这股经济寒流">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-02T19:28:41.000Z">
-<meta property="article:modified_time" content="2022-12-03T15:23:16.044Z">
+<meta property="article:published_time" content="2022-12-03T15:30:34.000Z">
+<meta property="article:modified_time" content="2022-12-03T15:49:59.373Z">
 <meta property="article:author" content="TuoLiYinLi">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="生活">
+<meta property="article:tag" content="游戏">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Linux备份整个系统 - 脱离引力的博客||Game&amp;Life</title>
+  <title>MageCosmos策划试题 - 脱离引力的博客||Game&amp;Life</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Linux备份整个系统"></span>
+            <span id="subtitle" data-typed-text="MageCosmos策划试题"></span>
           
         </div>
 
@@ -207,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-03 03:28" pubdate>
-          2022年12月3日 凌晨
+        <time datetime="2022-12-03 23:30" pubdate>
+          2022年12月3日 晚上
         </time>
       </span>
     
@@ -219,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          500 字
+          2.2k 字
         
       </span>
     
@@ -230,7 +231,7 @@
         
         
         
-          5 分钟
+          19 分钟
         
       </span>
     
@@ -268,35 +269,97 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Linux备份整个系统</h1>
+            <h1 style="display: none">MageCosmos策划试题</h1>
             
             
               <div class="markdown-body">
                 
                 <div class="note note-primary">
-            <p>一分钟教会你备份Linux</p>
+            <p>北京MageCosmos面试被骗方案，话说，这是面试游戏策划的日常吧</p>
           </div>
-<h1 id="备份">备份</h1>
-<p>备份系统（测试系统为Linux Centos 7 X86 64）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tar cvpzf backup.tgz / --exclude=<span class="hljs-string">&#x27;/proc/*&#x27;</span> --exclude=<span class="hljs-string">&#x27;backup.tgz&#x27;</span> --exclude=<span class="hljs-string">&#x27;/mnt/*&#x27;</span> --exclude=<span class="hljs-string">&#x27;/sys/*&#x27;</span> --exclude=<span class="hljs-string">&#x27;/lost+found/*&#x27;</span><br></code></pre></td></tr></table></figure>
+<p>虽然面试官说你很优秀，但事实上他只是希望让你交出你的方案作为“考试”，然后一脚把你踢飞。</p>
+<p>找个正儿八经的游戏策划实习还是很麻烦的，这一年疫情严峻，很多公司都缩减了名额，校招都没几个……从现在年底的情况看来，还好没去这一家，要不然就算实习了也不能转正吧，恐怕老板都被这股经济寒流吹成沙壁了。</p>
+<p>当时我怀着期待去投递答案，真是太可笑了哈哈，后来面试官再也没联系过。</p>
+<p>答案放这儿留个纪念。</p>
+<h3 id="大厅的设计基本理念">1.大厅的设计基本理念</h3>
+<p>大厅的设计可以参考现实中迪士尼、欢乐谷这样的大型游乐园进行设计，具体来说，将多个不同的小游戏分割为不同的区块进行设计，然后进行有机的组合，形成整个大厅。不局限于水平空间，还可以在垂直空间上进行设计。</p>
+<h3 id="破冰和留住玩家">2.破冰和留住玩家</h3>
+<p>破冰和留住玩家可以从两个方面入手，首先是内容上吸引玩家，优质的内容，耐玩的玩法正是对应玩家的娱乐目标，然后是玩家在虚拟世界中的人际关系，社交情况，这也是留住玩家的重要手段。接下来针对对这两方面进行具体的设计，提出三个小游戏区块。</p>
+<h3 id="抢夺王冠">3.抢夺王冠</h3>
+<h4 id="目标">3.1.目标</h4>
 <ul>
-<li><code>tar</code>我们备份系统所使用的压缩程序</li>
-<li><code>cvpfz</code>是tar的选项，意思是“创建档案文件”、“保持权限”(保留所有东西原来的权限)、“使用gzip来减小文件尺寸”</li>
-<li><code>backup.gz</code>是我们将要得到的档案文件的文件名</li>
-<li><code>/</code>是我们要备份的目录，在这里是整个文件系统</li>
-<li>注意<code>--exclude</code>参数格式 <a
-target="_blank" rel="noopener" href="https://askubuntu.com/questions/811081/how-do-i-use-tar-to-exclude-all-files-of-a-certain-directory">How
-do I use tar to exclude all files of a certain directory?</a></li>
+<li>让玩家之间的互动活跃起来</li>
 </ul>
-<h1 id="恢复">恢复</h1>
-<p>使用下面的命令来恢复系统（尚未测试）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tar xvpfz backup.tgz -C /<br></code></pre></td></tr></table></figure>
-<p>当你重启电脑，你会发现一切东西恢复到你创建备份时的样子了！</p>
-<blockquote>
-<p>参考 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2f75b58402e8">Linux
-备份整个系统</a></p>
-</blockquote>
-<p>奶奶地这个人写的真的坑……</p>
+<h4 id="参考依据">3.2.参考依据</h4>
+<ul>
+<li>相互争抢追逐打闹的是人类的天性，6到14岁的孩子之常常上演自然产生的“老鼠偷油”“抓人”等游戏，在VR的情形下，能够带给玩家追逐的刺激乐趣</li>
+<li>参考竞速游戏（包含了气垫、踩到后加速的机关等元素）和FPS中的夺旗战斗（把敌人的旗子搬运到家里，小心被杀死）</li>
+</ul>
+<h4 id="概述">3.3.概述</h4>
+<p>参与此小游戏的玩家们需要抢夺王冠，对于戴着王冠的玩家根据持续时间和玩家人数进行奖励。游玩此小游戏不一定要呆在此小游戏的区块内，可以适当扩大到整个大厅，同时，应当根据大厅的场景设计弹跳气垫，快速通道，一个滑索，连接两个难以通过的区域，适当增加有难度的跳跃跑酷地形，这些将会提高这个小游戏的可玩性等，同时提高大厅的丰富程度。</p>
+<h4 id="规则">3.4.规则</h4>
+<ul>
+<li>王冠作为一种道具，可以被玩家拾起并佩戴在头上，也可以被其他靠近的玩家夺取。</li>
+<li>戴上王冠对玩家进行一个基础奖励和一个挑战奖励。基础奖励指，一个每天一次或若干周期一次的奖励（就像每日任务一样），每个周期内玩家第一次抢到王冠就可以获得奖励（用以提高玩家参与的积极性，一种在不熟悉这个小游戏的玩家间推广的手段）。挑战奖励指，随着参与这个小游戏的玩家数量增加，游戏的难度也在不断增加，对此给优秀的玩家以奖励。比如在五人以上的游戏中持续5分钟就给予一级奖励，在八人以上的游戏中持续5分钟就给予二级奖励等等。</li>
+</ul>
+<h4 id="具体设计">3.5.具体设计</h4>
+<h5 id="王座场景">3.5.1.王座场景</h5>
+<ul>
+<li>应当有多个出口，方便拿起王冠的玩家迅速离场。</li>
+<li>应当有一个放置王冠的支架，高于大部分空间，象征其重要性。</li>
+<li>应当有一个“报名器”，目的是提供一些限制，防止过多的玩家同时参加或者避免对被打扰的玩家造成影响，所以需要在报名器进行简单的报名以参加，从而正式加入这个小游戏。</li>
+<li>宣传装置，用于吸引玩家注意这个小游戏，或者提示仍有可参加的名额、奖励等，使得不了解情况的玩家能够理解情况，产生兴趣。宣传装置可以广泛理解，不限于广告牌，可以利用声音和颜色，场景整体的变化来进行暗示。</li>
+<li>可以延续以上思路来增加扩展，例如计时器，以控制一局小游戏的时间，产生一个赢家。例如排行榜，登记最近的优秀玩家。</li>
+<li>王座场景应该具备这些功能
+<ul>
+<li>忘了</li>
+<li>忘了</li>
+<li>放置王冠的位置，当没有人玩时，王冠被放置在这里。</li>
+<li>大厅夺取王冠小游戏利于玩家充分利用地图（因为必须经常移动跳跃），同时</li>
+</ul></li>
+</ul>
+<h5 id="王冠">3.5.2.王冠</h5>
+<ul>
+<li>一个欧式王冠，随着玩家持续佩戴的时间改变颜色以暗示玩家游玩这个小游戏的技巧优秀，同时也方便其它玩家看见王冠的位置</li>
+<li>可以被玩家戴在头上，也可以被摘取下来。平时放置在游戏大厅的王座场景，配合王座场景作为一个小游戏的启动点。</li>
+</ul>
+<h3 id="飞行棋">4.飞行棋</h3>
+<h4 id="目标-1">4.1.目标</h4>
+<ul>
+<li>让玩家之间的互动活跃起来</li>
+</ul>
+<h4 id="参考依据-1">4.2.参考依据</h4>
+<ul>
+<li>四人飞行棋，是派对上常见的小游戏，用于活跃气氛拉近玩家之间的距离</li>
+</ul>
+<h4 id="概述-1">4.3.概述</h4>
+<p>利用垂直空间，在大厅的上方空间布置一个巨大的飞行棋棋盘，沿用传统飞行棋的规则。将提升游玩的体验作为重点，修改棋子的外形，简化投骰子的操作。</p>
+<h4 id="具体设计-1">4.4.具体设计</h4>
+<ul>
+<li>玩家可以坐在飞行棋棋子内部</li>
+<li>玩家用遥控器来控制投骰子（因为场景太大）</li>
+<li>一个巨大的骰子，放置在飞行棋棋盘的中间位置，便于观察</li>
+<li>飞行棋棋盘在外观上偏向透明，制造镂空结构，便于下方的玩家也能观察到游戏情况</li>
+</ul>
+<h3 id="好友花店">5.好友花店</h3>
+<h4 id="目标-2">5.1.目标</h4>
+<p>模拟现实中朋友伴侣间送花表达好意的情形，以及方便玩家添加好友，增添羁绊。</p>
+<h4 id="参考依据-2">5.2.参考依据</h4>
+<ul>
+<li>社会现实情况，如访问亲友，探望病人，恋爱求婚</li>
+<li>光遇添加好友时需要点亮蜡烛</li>
+</ul>
+<h4 id="概述-2">5.3.概述</h4>
+<p>安放一个好友花店在大厅，允许玩家买花（获得鲜花、向日葵等等道具），可以用于向陌生人发起交友请求或好感度系统。</p>
+<h4 id="具体设计-2">5.4.具体设计</h4>
+<ul>
+<li>花店房屋的外壳，建议将花店模型制作地精致，因为这个小游戏区块在外观上格外重要。</li>
+<li>多个货架，在货架上放置不同的鲜花</li>
+<li>鲜花道具随着购买次数提升价格（有一个上限），能够让玩家更加谨慎地添加好友</li>
+<li>拿起鲜花道具后为玩家显示正前方陌生人的部分信息，当玩家将手臂向前伸长时就可以申请添加好友</li>
+<li>同理，受到邀请的玩家接过鲜花则可以接受邀请，成为好友（或提高好友值等等）。</li>
+<li>鲜花的外观可以进行不同的设计，赋予不同的价格，如钻石花（价格更贵，花语：我是土豪），如鸡翅花（鸡翅烤串的外形，花语：没有什么是一顿烧烤解决不了的），发挥创意</li>
+</ul>
 
                 
               </div>
@@ -315,7 +378,7 @@ do I use tar to exclude all files of a certain directory?</a></li>
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%AE%B0%E5%BD%95/" class="category-chain-item">记录</a>
+  <a href="/categories/%E6%97%A5%E5%B8%B8/" class="category-chain-item">日常</a>
   
   
 
@@ -330,7 +393,9 @@ do I use tar to exclude all files of a certain directory?</a></li>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux/">#Linux</a>
+        <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
+      
+        <a href="/tags/%E6%B8%B8%E6%88%8F/">#游戏</a>
       
     </div>
   
@@ -342,8 +407,8 @@ do I use tar to exclude all files of a certain directory?</a></li>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Linux备份整个系统</div>
-      <div>http://tuoliyinli.github.io/2022/12/03/Linux备份整个系统/</div>
+      <div>MageCosmos策划试题</div>
+      <div>http://tuoliyinli.github.io/2022/12/03/关于面试官骗我方案这件事/</div>
     </div>
     <div class="license-meta">
       
@@ -391,18 +456,12 @@ do I use tar to exclude all files of a certain directory?</a></li>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/03/%E5%85%B3%E4%BA%8E%E9%9D%A2%E8%AF%95%E5%AE%98%E9%AA%97%E6%88%91%E6%96%B9%E6%A1%88%E8%BF%99%E4%BB%B6%E4%BA%8B/" title="MageCosmos策划试题">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MageCosmos策划试题</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/07/08/%E9%9C%93%E8%99%B9%E6%94%80%E5%8D%87-%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" title="霓虹攀升——游戏设计">
-                        <span class="hidden-mobile">霓虹攀升——游戏设计</span>
+                      <a href="/2022/12/03/Linux%E5%A4%87%E4%BB%BD%E6%95%B4%E4%B8%AA%E7%B3%BB%E7%BB%9F/" title="Linux备份整个系统">
+                        <span class="hidden-mobile">Linux备份整个系统</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
